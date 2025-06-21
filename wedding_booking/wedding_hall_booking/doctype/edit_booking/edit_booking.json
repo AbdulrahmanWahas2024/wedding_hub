@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-18 03:09:42.797835",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_vqjw",
+  "booking_no",
+  "customer_phone",
+  "booking_date",
+  "hall_name",
+  "total_amount",
+  "paid_amount",
+  "remaining"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_vqjw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "booking_no",
+   "fieldtype": "Link",
+   "label": "\u0631\u0642\u0645 \u0627\u0644\u062d\u062c\u0632",
+   "options": "Wedding Hall Booking Doc"
+  },
+  {
+   "fieldname": "customer_phone",
+   "fieldtype": "Data",
+   "label": "\u0631\u0642\u0645 \u0647\u0627\u062a\u0641 \u0627\u0644\u0639\u0645\u064a\u0644",
+   "options": "mobile_number"
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e "
+  },
+  {
+   "fieldname": "hall_name",
+   "fieldtype": "Link",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0642\u0627\u0639\u0629 ",
+   "options": "Hall"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u0628\u0644\u063a \u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062f\u0641\u0648\u0639"
+  },
+  {
+   "fieldname": "remaining",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0645\u062a\u0628\u0642\u064a"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-18 03:45:25.807834",
+ "modified_by": "Administrator",
+ "module": "Wedding Hall Booking",
+ "name": "Edit Booking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_views": 1
+}
