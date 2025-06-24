@@ -23,7 +23,7 @@
    "fieldname": "booking_no",
    "fieldtype": "Link",
    "label": "\u0631\u0642\u0645 \u0627\u0644\u062d\u062c\u0632",
-   "options": "Wedding Hall Booking Doc"
+   "options": "Wedding Hall Booking"
   },
   {
    "fieldname": "customer_phone",
@@ -61,7 +61,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-18 03:45:25.807834",
+ "modified": "2025-06-24 18:58:09.386643",
  "modified_by": "Administrator",
  "module": "Wedding Hall Booking",
  "name": "Edit Booking",

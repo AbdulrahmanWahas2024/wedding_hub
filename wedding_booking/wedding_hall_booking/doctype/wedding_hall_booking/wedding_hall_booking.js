@@ -1,7 +1,7 @@
 // Copyright (c) 2025, Abdulrahman Wahas and contributors
 // For license information, please see license.txt
 // دالة اظهار تفاصيل الحوالة
-frappe.ui.form.on("Wedding Hall Booking Doc", {
+frappe.ui.form.on("Wedding Hall Booking", {
  	payment_method: function(frm) {
     frm.toggle_display("transfer_details", frm.doc.payment_method === "حوالة");
   },
@@ -13,7 +13,7 @@ frappe.ui.form.on("Wedding Hall Booking Doc", {
  // This script is for the Wedding Hall Booking form in Frappe/ERPNext.
  // It handles the visibility of the transfer details field based on the selected payment method.
  // احتساب المبلغ المتبقي بناءً على المبلغ المتفق عليه والمدفوع
- frappe.ui.form.on("Wedding Hall Booking Doc", {
+ frappe.ui.form.on("Wedding Hall Booking", {
   amount_paid: function(frm) {
     if (frm.doc.amount_agreed && frm.doc.amount_paid) {
       frm.set_value("amount_remaining", frm.doc.amount_agreed - frm.doc.amount_paid);
@@ -40,14 +40,14 @@ frappe.ui.form.on('Booking Day', {
 // This script is for the Wedding Hall Booking form in Frappe/ERPNext.
 // It validates the booking dates against existing bookings for the same hall to prevent double bookings.
 //منع الحجز بتاريخ محجوز مسبقاً
-// frappe.ui.form.on("Wedding Hall Booking Doc", {
+// frappe.ui.form.on("Wedding Hall Booking", {
 //   validate: function(frm) {
 //     if (frm.doc.hall_name && frm.doc.booking_days && frm.doc.booking_days.length > 0) {
 //       frappe.call({
 //         method: "frappe.client.get_list",
 //         async: false,
 //         args: {
-//           doctype: "Wedding Hall Booking Doc",
+//           doctype: "Wedding Hall Booking",
 //           filters: {
 //             hall_name: frm.doc.hall_name,
 //             name: ["!=", frm.doc.name],

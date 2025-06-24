@@ -8,7 +8,7 @@
 #         validate(self, "validate")
 
 
-#  class WeddingHallBookingDoc(Document):
+#  class WeddingHallBooking(Document):
 #  	pass
 from frappe.model.document import Document
 
