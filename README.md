@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 ### Wedding Hall Booking
@@ -43,3 +44,6 @@ This app can use GitHub Actions for CI. The following workflows are configured:
 
 mit
 >>>>>>> 67364f8 (feat: Initialize App)
+=======
+# wedding_hub
+>>>>>>> 01bcad29ebf7305cdc4299d214cba77c44132580
