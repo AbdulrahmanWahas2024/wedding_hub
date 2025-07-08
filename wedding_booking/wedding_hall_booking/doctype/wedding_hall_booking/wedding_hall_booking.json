@@ -14,8 +14,8 @@
   "national_id",
   "city",
   "booking_days",
-  "booking_time",
   "column_break_zjkg",
+  "booking_time",
   "reservation_gender",
   "hall",
   "event_type",
@@ -25,8 +25,19 @@
   "amount_agreed",
   "amount_paid",
   "amount_remaining",
+  "notes",
+  "\u062a\u0641\u0627\u0635\u064a\u0644_\u0627\u0644\u062d\u062c\u0632_\u0648\u0627\u0644\u0636\u0645\u0627\u0646\u0627\u062a_section",
+  "from_date",
+  "to_date",
+  "is_fully_paid",
+  "final_payment_date",
+  "column_break_fd2u",
   "booking_status",
-  "notes"
+  "final_receipt_no",
+  "customer_status",
+  "has_deposit",
+  "section_break_a9oz",
+  "deposits"
  ],
  "fields": [
   {
@@ -118,7 +129,7 @@
   {
    "fieldname": "reservation_gender",
    "fieldtype": "Select",
-   "label": "\u0646\u0648\u0639 \u0627\u0644\u062d\u062c\u0632",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u0639\u0631\u0633",
    "options": "\u0631\u062c\u0627\u0644\u064a\n\u0646\u0633\u0627\u0626\u064a"
   },
   {
@@ -156,13 +167,74 @@
    "in_preview": 1,
    "label": "\u0627\u0633\u0645 \u0627\u0644\u0642\u0627\u0639\u0629 ",
    "options": "Hall"
+  },
+  {
+   "fieldname": "\u062a\u0641\u0627\u0635\u064a\u0644_\u0627\u0644\u062d\u062c\u0632_\u0648\u0627\u0644\u0636\u0645\u0627\u0646\u0627\u062a_section",
+   "fieldtype": "Section Break",
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u062d\u062c\u0632 \u0648\u0627\u0644\u0636\u0645\u0627\u0646\u0627\u062a"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0628\u062f\u0627\u064a\u0629 \u0627\u0644\u062d\u062c\u0632",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0646\u0647\u0627\u064a\u0629 \u0627\u0644\u062d\u062c\u0632",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_fully_paid",
+   "fieldtype": "Check",
+   "label": "\u062a\u0645 \u062f\u0641\u0639 \u0643\u0627\u0645\u0644 \u0627\u0644\u0645\u0628\u0644\u063a\u061f"
+  },
+  {
+   "depends_on": "doc.is_fully_paid==1",
+   "fieldname": "final_payment_date",
+   "fieldtype": "Date",
+   "label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0633\u062f\u0627\u062f \u0627\u0644\u0646\u0647\u0627\u0626\u064a"
+  },
+  {
+   "fieldname": "final_receipt_no",
+   "fieldtype": "Data",
+   "label": "\u0633\u0646\u062f \u0627\u0644\u0633\u062f\u0627\u062f \u0627\u0644\u0646\u0647\u0627\u0626\u064a",
+   "options": "Payment Entry"
+  },
+  {
+   "fieldname": "customer_status",
+   "fieldtype": "Select",
+   "label": "\u062d\u0627\u0644\u0629 \u0645\u0644\u0641 \u0627\u0644\u0639\u0645\u064a\u0644",
+   "options": "\u0646\u0634\u0637\n\u0645\u063a\u0644\u0642"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_deposit",
+   "fieldtype": "Check",
+   "label": "\u0647\u0644 \u064a\u0648\u062c\u062f \u062a\u0623\u0645\u064a\u0646\u061f"
+  },
+  {
+   "fieldname": "deposits",
+   "fieldtype": "Table",
+   "label": "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u062a\u0623\u0645\u064a\u0646 ",
+   "options": "Hall Booking Deposit"
+  },
+  {
+   "fieldname": "column_break_fd2u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_a9oz",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-24 23:46:07.461675",
+ "modified": "2025-06-28 01:18:25.966056",
  "modified_by": "Administrator",
  "module": "Wedding Hall Booking",
  "name": "Wedding Hall Booking",
